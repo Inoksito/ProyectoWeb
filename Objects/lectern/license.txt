@@ -1,0 +1,11 @@
+Model Information:
+* title:	lectern
+* source:	https://sketchfab.com/3d-models/lectern-17562d27f70b4b4a834cd778cd5e6c06
+* author:	distant_voices (https://sketchfab.com/distant_voices)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "lectern" (https://sketchfab.com/3d-models/lectern-17562d27f70b4b4a834cd778cd5e6c06) by distant_voices (https://sketchfab.com/distant_voices) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

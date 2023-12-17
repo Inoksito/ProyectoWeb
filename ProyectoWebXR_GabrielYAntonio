@@ -7,31 +7,20 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.misc.min.js"></script>
     <script src="https://unpkg.com/super-hands@^3.0.3/dist/super-hands.min.js"></script>
-   
-
 </head>
 <body>
   
     <a-scene cursor="rayOrigin: mouse" background="color: #ECECEC" obb-collider = "showColliders:true">
        <a-assets>
-            
-           
               <a-asset-item id = "Library" src = "Objects/mozilla_hubs_challenge_-_wizards_library/scene.gltf" > </a-asset-item >
-         
               <a-asset-item id = "Dungeon" src = "Objects/dungeon_test_trim_sheet/scene.gltf" > </a-asset-item >
-
               <a-asset-item id = "Book" src = "Objects/ornate_book/scene.gltf" > </a-asset-item >
-
               <a-asset-item id = "Lectern" src = "Objects/lectern/scene.gltf" > </a-asset-item > 
-
               <img id="texture1" src="Textures/base.jpg">
               <img id="normal1" src="assets/normal.jpg">
               <img id="texture2" src="Textures/base_color.jpg">
-              <img id="normal2" src="assets/normal_map.jpg">
-              
+              <img id="normal2" src="assets/normal_map.jpg">         
           </a-assets>
-
-   
         <!-- camera & hand controls -->
        
         <a-entity id="camera-rig" position="0 0.5 0">
@@ -40,8 +29,7 @@
           </a-entity>
           <a-entity id="rhand" hand-controls="hand: right; color: #FFCCCC" magicleap-controls="hand: right; model: false"  oculus-touch-controls="hand: right; model: false" windows-motion-controls="model: false" visible="">
           </a-entity>
-          </a-entity>
-          
+          </a-entity> 
         </a-entity>
       
         <a-entity id="scene1">
@@ -54,33 +42,13 @@
           <a-entity  position="-1.856 2 -8.5" text__nextlevel="value: Use right joystick to move around the map" scale="5 3.07 1.72" rotation=""></a-entity>
         </a-entity>
     
-    <a-entity id="scene2" visible="false">
-      <a-entity  gltf-model = "#Library" scale="" position="-24.29 0 -2"> </a-entity>
-        <a-sky src="Cielo_Estrellado.png"></a-sky>
-        <a-entity  gltf-model = "#Book"  scale="0.001 0.001 0.001" position="-19.12115 1.53677 -2.52051" rotation="71.9 90 0">&gt;</a-entity>
-
-        <a-entity gltf-model = "#Lectern" position="-19.18885 -0.02674 -2.47259" rotation="0 -90 0"></a-entity>
-     
-    
-    
-      </a-scene>
-     <script type="text/javascript">
-        AFRAME.registerComponent('qz-keyboard-controls', {
-        // ...
-
-        getVelocityDelta: function () {
-          var data = this.data,
-              keys = this.getKeys();
-
-          this.dVelocity.set(0, 0, 0);
-          if (data.enabled) {
-            if (keys.KeyQ)  { this.dVelocity.y += 1; }
-            if (keys.KeyZ) { this.dVelocity.y -= 1; }
-          }
-
-          return this.dVelocity.clone();
-        },
-
+        <a-entity id="scene2" visible="false">
+          <a-entity  gltf-model = "#Library" scale="" position="-24.29 0 -2"> </a-entity>
+            <a-sky src="Cielo_Estrellado.png"></a-sky>
+            <a-entity  gltf-model = "#Book"  scale="0.001 0.001 0.001" position="-19.12115 1.53677 -2.52051" rotation="71.9 90 0">&gt;</a-entity>
+            <a-entity gltf-model = "#Lectern" position="-19.18885 -0.02674 -2.47259" rotation="0 -90 0"></a-entity>
+          </a-entity>
+        </a-scene>
         // ...
       });
       function StartAnimation(){

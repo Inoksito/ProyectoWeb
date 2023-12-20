@@ -29,7 +29,7 @@
           </a-entity>
           <a-entity id="rhand" hand-controls="hand: right; color: #FFCCCC" magicleap-controls="hand: right; model: false"  oculus-touch-controls="hand: right; model: false" windows-motion-controls="model: false" visible="">
           </a-entity>
-          </a-entity> 
+        
         </a-entity>
       
         <a-entity id="scene1">
@@ -49,8 +49,7 @@
             <a-entity gltf-model = "#Lectern" position="-19.18885 -0.02674 -2.47259" rotation="0 -90 0"></a-entity>
           </a-entity>
         </a-scene>
-        // ...
-      });
+      
       function StartAnimation(){
         document.getElementById('cube2').setAttribute("animation", "property: rotation; to: 360 90 90; dur:4000; easing: easeInQuad; loop: true;elasticity:600");
       }
